@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SessionLightener Options</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      max-width: 400px;
+    }
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 0.8em;
+    }
+    label {
+      margin-bottom: 0.4em;
+      display: block;
+    }
+    input[type="range"] {
+      width: 100%;
+    }
+    #value {
+      font-weight: bold;
+    }
+    p {
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <h1>SessionLightener</h1>
+  <p>
+    Configure how many of the most recent messages to keep visible in your
+    ChatGPT or Grok conversations. Reducing this number can improve
+    performance in very long chats. Hidden messages are not deleted and
+    can be restored by refreshing the page.
+  </p>
+  <label for="range">
+    Keep last <span id="value"></span> messages
+  </label>
+  <input type="range" id="range" min="1" max="200" step="1" />
+  <script src="options.js"></script>
+</body>
+</html>
