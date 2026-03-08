@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SessionLightener</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 12px;
+      min-width: 200px;
+    }
+    h1 {
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    label {
+      font-size: 0.9em;
+      margin-bottom: 0.3em;
+      display: block;
+    }
+    input[type="range"] {
+      width: 100%;
+    }
+    #value {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>SessionLightener</h1>
+  <label for="range">
+    Keep last <span id="value"></span> messages
+  </label>
+  <input type="range" id="range" min="1" max="200" step="1" />
+
+  <script src="popup.js"></script>
+</body>
+</html>
