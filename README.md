@@ -1,0 +1,2 @@
+# WEBNOKAIWAWOKARUKUSURU
+ChatGPTとかGrokとかで長く会話してるとどんどんWEBが重くなっていく問題を解決できる拡張機能
